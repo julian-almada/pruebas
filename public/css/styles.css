@@ -1,3 +1,27 @@
 * {
-    margin: 3%;
+    margin: .5%;
+}
+
+:root {
+    --turquesa: #6cf3d5;
+    --verde: #21a3a3;
+}
+
+body {
+    background: rgb(240, 237, 237);
+    margin-right: -.5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    border: solid 1px var(--verde);
+    padding-right: .3rem;
+
+}
+
+.menu {
+    font-size: 2rem;
 }
