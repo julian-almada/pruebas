@@ -5,20 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>merch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/9bda9bfb9e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img src="/images/gallo.jpg" alt="logo" width="60">
-        
-        <div class="menu">
-            X
+        <div class="header-content">
+            <a href="#"><img src="/images/a.jpg" alt="logo" width="60"></a>
+            
+            <button class="" id="label"><i class="fa-solid fa-bars"></i></button>
         </div>
+        <div class="degradado">
+            vacio
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio"><i class="fa-sharp fa-regular fa-house"></i> home</a></li>
+                <li><a href="#detalles"><i class="fa-solid fa-user"></i> log in</a></li>
+                <li><a href="#about"><i class="fa-regular fa-address-card"></i> about</a></li>
+                <li><a href="#opiniones"><i class="fa-regular fa-cart-shopping"></i> shopping cart</a></li>
+                <li><a href="#precios"><i class="fa-regular fa-star"></i> featured</a></li>
+                <li><a href="#contacto"><i class="fa-regular fa-envelope"></i> contact</a></li>
+            </ul>
+        </nav>
+        
     </header>
+
     <main>
-        <!-- <section>
-            <img src="/images/D_NQ_NP_800757-MLA42805867459_072020-O.jpg" alt="">
-        </section> -->
+       <section>
+        <div class="slide-container">
+            <img src="/images/buzo.jpg" alt="imagen de buzos">
+            <div class="slide-desc">
+                <span>Buzos</span>
+            </div>
+        </div>
+       </section>
+
+    <section class="ultima">
+        <div class="slide-container">
+            <img src="/images/pantalon.jpg" alt="imagen de buzos">
+            <div class="slide-desc">
+                <span>Pantalones</span>
+            </div>
+        </div>
+    </section>
     </main>
+
+    <footer class='footer'>
+        <div class='footer-info'>
+            <h1>Julian Almada</h1>
+            <p>Desings for you!</p>
+        </div>
+        <div class='footer-contact'>
+            <h3>Contact me</h3>
+            <p>And let´s get down to work.</p>
+        </div>
+        <div class='footer-sns'>
+            <div class='desing-by'>
+                Desing By Julian Alamada. ®
+            </div>
+            <div class='sns-links'>
+                <a href='#' target='_blank'>
+                    <i class='fab fa-linkedin linkedin'></i>
+                </a>
+                <a href='#' target='_blank'>
+                    <i class='fab fa-facebook facebook'></i>
+                </a>
+                <a href='#' target='_blank'>
+                    <i class='fab fa-github github'></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const headerBtn = document.querySelector('#label');
+        const headerMenu = document.querySelector('.navbar');
+        headerBtn.addEventListener('click', () => {
+            if (headerMenu.style.display != 'flex') {
+                headerMenu.style.display = 'flex'
+                headerBtn.innerHTML = '<i class="fa-solid fa-x"></i>'
+            } else {
+                headerMenu.style.display = 'none'
+                headerBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
+            }
+        });
+    </script>
 </body>
 </html>

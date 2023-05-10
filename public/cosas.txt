@@ -1,0 +1,3 @@
+agregar box shadow a la imagen de section en hover
+definir colores
+dar tamaño fijo a section
